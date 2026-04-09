@@ -1,32 +1,47 @@
-[
-  {
-    "id": "base",
-    "label": "Base",
-    "order": 1
-  },
-  {
-    "id": "side-hustle",
-    "label": "Side Hustle",
-    "order": 2
-  },
-  {
-    "id": "marketing",
-    "label": "Marketing",
-    "order": 3
-  },
-  {
-    "id": "self-discipline",
-    "label": "Self-Discipline",
-    "order": 4
-  },
-  {
-    "id": "quit-addiction",
-    "label": "Quit Addiction",
-    "order": 5
-  },
-  {
-    "id": "others",
-    "label": "Others",
-    "order": 6
-  }
-]
+{
+  "base": [
+    "email-summary",
+    "gmail",
+    "google-calendar",
+    "google-places",
+    "invoice-organizer",
+    "reddit",
+    "self-diagnose",
+    "skill-install",
+    "translate",
+    "twitter"
+  ],
+  "side-hustle": [
+    "ecommerce",
+    "marketplace",
+    "freelance",
+    "intelligent-budget-tracker",
+    "financial-tracker"
+  ],
+  "marketing": [
+    "ad-creative",
+    "copywriting",
+    "content-strategy",
+    "marketing-ideas",
+    "launch-strategy",
+    "social-content"
+  ],
+  "self-discipline": [
+    "build-discipline",
+    "coach",
+    "gym",
+    "dietitian",
+    "focus-deep-work",
+    "time-management"
+  ],
+  "quit-addiction": [
+    "therapy-mode",
+    "quit-smoking",
+    "quit-alcohol",
+    "social-media-detox",
+    "stress-relief"
+  ],
+  "others": [
+    "connect"
+  ]
+}
