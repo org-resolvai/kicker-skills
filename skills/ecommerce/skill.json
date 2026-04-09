@@ -1,0 +1,14 @@
+{
+  "id": "ecommerce",
+  "name": "ecommerce",
+  "description": "电子商务运营全流程指南，涵盖从开店、选品到营销的各个方面。",
+  "scenario": "side-hustle",
+  "tags": [
+    "business"
+  ],
+  "enabledByDefault": false,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/ivangdavila/ecommerce",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

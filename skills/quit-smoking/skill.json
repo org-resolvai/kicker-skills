@@ -1,0 +1,14 @@
+{
+  "id": "quit-smoking",
+  "name": "quit-smoking",
+  "description": "戒烟助手，跟踪无烟天数、提供戒断支持和健康恢复时间线。",
+  "scenario": "quit-addiction",
+  "tags": [
+    "health"
+  ],
+  "enabledByDefault": false,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/jhillin8/quit-smoking",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "social-content",
+  "name": "social-content",
+  "description": "帮助制作 Twitter、LinkedIn 等社交平台的内容，包括帖子、线程和互动策略。",
+  "scenario": "marketing",
+  "tags": [
+    "marketing",
+    "social"
+  ],
+  "enabledByDefault": false,
+  "source": "MarketingSkills",
+  "installUrl": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/social-content",
+  "repo": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/social-content",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

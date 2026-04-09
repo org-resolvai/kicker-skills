@@ -1,0 +1,14 @@
+{
+  "id": "financial-tracker",
+  "name": "financial-tracker",
+  "description": "轻量级财务追踪工具，用 CSV 格式记录收入和支出，生成 P&L 摘要。",
+  "scenario": "side-hustle",
+  "tags": [
+    "finance"
+  ],
+  "enabledByDefault": false,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/1kalin/financial-tracker",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

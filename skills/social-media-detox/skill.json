@@ -1,0 +1,14 @@
+{
+  "id": "social-media-detox",
+  "name": "social-media-detox",
+  "description": "帮助用户减少社交媒体使用时间，摆脱信息过载和手机成瘾。",
+  "scenario": "quit-addiction",
+  "tags": [
+    "health"
+  ],
+  "enabledByDefault": false,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/jhillin8/social-media-detox",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

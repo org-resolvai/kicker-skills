@@ -1,0 +1,14 @@
+{
+  "id": "therapy-mode",
+  "name": "therapy-mode",
+  "description": "深度的对话式 AI 治疗模式，提供情感支持、心理疏导和认知行为技巧。",
+  "scenario": "quit-addiction",
+  "tags": [
+    "mental-health"
+  ],
+  "enabledByDefault": false,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/TheSethRose/therapy-mode",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

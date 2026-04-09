@@ -1,0 +1,13 @@
+{
+  "id": "translate",
+  "name": "translate",
+  "description": "多语言翻译工具，支持多种语言互译，保留原文格式和语气。纯指令型 Skill，无需任何凭证。",
+  "scenario": "base",
+  "tags": [
+    "language"
+  ],
+  "enabledByDefault": true,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/ivangdavila/translate",
+  "dependencyType": "none"
+}

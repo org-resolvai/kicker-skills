@@ -1,0 +1,16 @@
+{
+  "id": "marketing-ideas",
+  "name": "marketing-ideas",
+  "description": "提供创新的市场营销点子和活动策划，帮助突破创意瓶颈。",
+  "scenario": "marketing",
+  "tags": [
+    "marketing",
+    "ideas"
+  ],
+  "enabledByDefault": false,
+  "source": "MarketingSkills",
+  "installUrl": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/marketing-ideas",
+  "repo": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/marketing-ideas",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

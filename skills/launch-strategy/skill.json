@@ -1,0 +1,16 @@
+{
+  "id": "launch-strategy",
+  "name": "launch-strategy",
+  "description": "为新产品或服务的发布制定详细的策略和执行计划，覆盖预热、发布和复盘全流程。",
+  "scenario": "marketing",
+  "tags": [
+    "marketing",
+    "launch"
+  ],
+  "enabledByDefault": false,
+  "source": "MarketingSkills",
+  "installUrl": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/launch-strategy",
+  "repo": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/launch-strategy",
+  "securityLevel": "MEDIUM",
+  "dependencyType": "none"
+}

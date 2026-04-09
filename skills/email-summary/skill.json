@@ -1,0 +1,11 @@
+{
+  "id": "email-summary",
+  "name": "email-summary",
+  "description": "邮件总结",
+  "scenario": "base",
+  "tags": [
+    "email",
+    "productivity"
+  ],
+  "enabledByDefault": true
+}

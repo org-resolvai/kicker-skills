@@ -1,0 +1,14 @@
+{
+  "id": "time-management",
+  "name": "time-management",
+  "description": "时间管理助手，提供时间块、优先级排序等多种时间管理技巧和工具。",
+  "scenario": "self-discipline",
+  "tags": [
+    "productivity"
+  ],
+  "enabledByDefault": false,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/ivangdavila/time-management",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "twitter",
+  "name": "twitter",
+  "description": "Twitter",
+  "scenario": "base",
+  "tags": [
+    "social"
+  ],
+  "enabledByDefault": true
+}

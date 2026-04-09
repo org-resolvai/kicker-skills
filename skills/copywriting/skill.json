@@ -1,0 +1,16 @@
+{
+  "id": "copywriting",
+  "name": "copywriting",
+  "description": "专业文案写作助手，适用于网站着陆页、邮件和社交媒体等多种场景。",
+  "scenario": "marketing",
+  "tags": [
+    "marketing",
+    "writing"
+  ],
+  "enabledByDefault": false,
+  "source": "MarketingSkills",
+  "installUrl": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/copywriting",
+  "repo": "https://github.com/coreyhaines31/marketingskills/tree/main/skills/copywriting",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "freelance",
+  "name": "freelance",
+  "description": "自由职业者平台导航，帮助在 Upwork/Fiverr 等平台寻找项目、定价和沟通。",
+  "scenario": "side-hustle",
+  "tags": [
+    "business"
+  ],
+  "enabledByDefault": false,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/ivangdavila/freelance",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

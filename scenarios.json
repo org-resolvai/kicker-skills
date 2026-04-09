@@ -1,0 +1,32 @@
+[
+  {
+    "id": "base",
+    "label": "Base",
+    "order": 1
+  },
+  {
+    "id": "side-hustle",
+    "label": "Side Hustle",
+    "order": 2
+  },
+  {
+    "id": "marketing",
+    "label": "Marketing",
+    "order": 3
+  },
+  {
+    "id": "self-discipline",
+    "label": "Self-Discipline",
+    "order": 4
+  },
+  {
+    "id": "quit-addiction",
+    "label": "Quit Addiction",
+    "order": 5
+  },
+  {
+    "id": "others",
+    "label": "Others",
+    "order": 6
+  }
+]

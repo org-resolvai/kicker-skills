@@ -1,0 +1,15 @@
+{
+  "id": "build-discipline",
+  "name": "build-discipline",
+  "description": "通过习惯叠加（Habit Stacking）、连胜追踪和责任制，建立坚不可摧的自律体系。",
+  "scenario": "self-discipline",
+  "tags": [
+    "habit",
+    "coaching"
+  ],
+  "enabledByDefault": false,
+  "source": "ClawdHub",
+  "installUrl": "https://clawhub.ai/jhillin8/build-discipline",
+  "securityLevel": "LOW",
+  "dependencyType": "none"
+}

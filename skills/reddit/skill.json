@@ -1,0 +1,14 @@
+{
+  "id": "reddit",
+  "name": "reddit-skill",
+  "description": "搜索、浏览帖子、查看评论和 subreddit 信息",
+  "scenario": "base",
+  "tags": [
+    "social",
+    "reddit"
+  ],
+  "enabledByDefault": true,
+  "repo": "https://github.com/brisyramshere/reddit-skill",
+  "dependencyType": "oauth",
+  "notes": "依赖 kicker 改造；需要在 skill 中配置 Reddit Client ID 与 Client Secret；使用时走 OAuth 授权流程"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "connect",
+  "name": "connect",
+  "description": "通过 Composio 平台连接 1000+ 应用（Gmail、Calendar、Slack 等），是邮件自动化和工作流集成的关键。",
+  "scenario": "others",
+  "tags": [
+    "integration"
+  ],
+  "enabledByDefault": false,
+  "source": "Awesome Claude Skills",
+  "installUrl": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/connect",
+  "repo": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/connect",
+  "securityLevel": "LOW",
+  "dependencyType": "composioApiKeyAndOauth",
+  "notes": "需要注册 Composio 平台获取免费 API Key（https://platform.composio.dev）；首次连接每个应用需用户完成 OAuth 授权"
+}
