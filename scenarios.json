@@ -11,7 +11,7 @@
     "translate",
     "twitter"
   ],
-  "side-hustle": [
+  "hustle": [
     "ecommerce",
     "marketplace",
     "freelance",
@@ -26,7 +26,7 @@
     "launch-strategy",
     "social-content"
   ],
-  "self-discipline": [
+  "discipline": [
     "build-discipline",
     "coach",
     "gym",
@@ -34,14 +34,14 @@
     "focus-deep-work",
     "time-management"
   ],
-  "quit-addiction": [
+  "addiction": [
     "therapy-mode",
     "quit-smoking",
     "quit-alcohol",
     "social-media-detox",
     "stress-relief"
   ],
-  "others": [
+  "other": [
     "connect"
   ]
 }
