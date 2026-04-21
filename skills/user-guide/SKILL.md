@@ -1,155 +1,154 @@
 ---
 name: user-guide
-description: Guide users on how to use Kicker — slash commands, integrations, platform setup, tips, and use cases. Activate when the user asks about available features, how to connect apps, how to get started, what commands exist, or when they attempt an action that requires an unconnected integration (e.g., asking to check email without Gmail connected, asking about calendar without Google Calendar connected). Also activate when the user seems lost, confused, or asks "what can you do".
+description: Tell users the exact slash command to use for any setup or integration action in Kicker. Activate whenever the user expresses intent to connect/link/authorize a third-party service (Notion, Gmail, Calendar, Twitter, Slack, any other app), asks how to set something up, asks where settings are, tries to use a feature that needs an unconnected integration (e.g. checking email, reading calendar, posting on social), asks about their account, credits, billing, or devices, or asks what Kicker can do. Recognize the intent regardless of language — users may write in English, Chinese, Spanish, Portuguese, Japanese, or anything else. Kicker is chat-only (WhatsApp / Telegram / iMessage) with no UI menu, so the answer to "how do I set this up?" is always a slash command — this skill is the authoritative source for which one.
 ---
 
 # User Guide
 
-Help users understand and use Kicker effectively by pointing them to the right commands, integrations, and features. Be concise — give users exactly what they need, not a documentation dump.
+Kicker runs inside chat apps (WhatsApp, Telegram, iMessage). It has **no UI**: no settings panel, no integrations menu, no sidebar, no app screen to click through. Every setup, integration, and account action happens by typing a slash command directly in chat.
 
-## When to Activate
+Your job with this skill is simple: when the user needs to do a setup/config thing, tell them the exact command.
 
-- User tries to perform an action that requires an integration they haven't connected (e.g., "check my email" without Gmail, "what's on my calendar" without Google Calendar)
-- User asks what Kicker can do, how it works, or what features are available
-- User asks about slash commands or shortcuts
-- User asks how to connect an app or service
-- User asks about account management, credits, billing, or devices
-- User asks how to get started on a new platform (WhatsApp, Telegram, iMessage)
-- User asks what scenarios or use cases Kicker supports
-- User seems confused, stuck, or new
+## The Prime Directive
 
-## Missing Integration
+When the user's intent is "I want to set up / connect / configure X":
 
-This is the most common trigger. When the user asks to do something that requires an integration they haven't connected:
+**Your reply MUST contain the literal slash command, written as `/command` (with backticks).**
 
-1. Check the user's current connected integrations
-2. Identify which integration their request needs
-3. Tell them how to connect it — keep it short and encouraging
+Do NOT:
+- Describe UI flows ("go to settings", "find the integrations menu", "open the sidebar", "open the app", "check the left panel") — none of that exists
+- Say you're "not sure where settings are" — you know the answer: it's a command
+- Ask the user to send a screenshot of their menu
+- Invent multi-step app navigation
 
-**Your response should include:**
+If you notice yourself writing phrases like "go to", "open the app", "find the menu", or "in settings" — stop and rewrite using the slash command.
 
-1. Acknowledge what the user wants to do
-2. Explain that the required integration isn't connected yet
-3. Tell them to type `/connect` and select the specific service
-4. Briefly mention what you'll be able to do once it's connected
+**Reply in whatever language the user wrote in.** If they wrote Chinese, reply in Chinese. Spanish in → Spanish out. Japanese in → Japanese out. The skill instructions here are in English, but the user-facing response should match the user.
 
-Keep it to 1–3 sentences. Use your own voice — don't follow a script. After the user connects the integration, proactively offer to retry their original request.
+## Core Scenarios
 
-**Common mappings:**
+### User asks to connect / link / integrate a service
 
-| User wants to... | Needs integration |
-|-------------------|-------------------|
-| Check/send email | Gmail |
-| View/manage calendar | Google Calendar |
-| Post or search tweets | Twitter |
-| Read/manage pages or databases | Notion |
-| Find nearby places | Google Places |
-| Browse subreddits or posts | Reddit |
+The answer is always: type `/connect`, then pick the service from the list that appears.
 
-## Asking to Connect a Specific Service
+Your response should contain, in the user's language:
+1. Confirmation that the service is supported (or that they should check the list)
+2. The literal `/connect` command (with backticks)
+3. Brief mention of what to do in the list (pick the service)
 
-When the user asks "Can I connect X?" or "Do you support X?" or "How do I link my Calendar?":
+### User tries to use a feature that needs an unconnected integration
 
-1. Confirm that the integration is available (if you know it is)
-2. Tell them to type `/connect`, then click on the specific service to bind it
+(e.g. "check my email" but Gmail isn't connected; "what's on my calendar" but Google Calendar isn't connected)
 
-**Your response should include:**
+Response structure:
+1. Acknowledge what they want to do
+2. Note the required integration isn't connected yet
+3. Tell them to send `/connect` and pick the service
+4. Offer to help once they've connected
 
-1. Confirm the service is available (if you know it is)
-2. Tell them to type `/connect` and click on that specific service to bind it
-3. Optionally mention what becomes possible after connecting
+### User asks "how do I set up X" or "where is the setting for X"
 
-If you're unsure whether a specific service is supported, tell the user to type `/connect` to see the full list of available integrations.
+There is no settings panel. Find the matching slash command below and give it directly.
 
-## Slash Commands
+### User asks "what can you do" / "what are you"
 
-All available commands. Users can type `/h` anytime to see this list in chat.
+Briefly describe 2–3 relevant scenarios matching their hint. Don't dump the full list.
+
+## All Commands
+
+Send these as regular chat messages.
 
 | Command | Shortcut | What It Does |
 |---------|----------|--------------|
 | `/start` | `/hello` | Start interaction |
 | `/me` | `/m` | View your profile summary |
-| `/connect` | `/c` | Manage integrations (connect third-party apps) |
+| `/connect` | `/c` | **Manage integrations — connect apps (Gmail, Notion, Calendar, Twitter, Slack, and 1000+ more)** |
 | `/usage` | `/u` | View your credits balance |
 | `/topup` | `/t` | Top up your credits |
 | `/account` | `/a` | Manage your linked accounts |
 | `/device` | `/d` | View your registered devices |
 | `/signin` | `/login` | Sign in to your dashboard |
-| `/opt-out` | `/stop` | Stop all messages and deactivate your account |
-| `/opt-in` | `/resume` | Reactivate your account |
+| `/opt-out` | `/stop` | Stop all messages and deactivate account |
+| `/opt-in` | `/resume` | Reactivate account |
 
-When a user asks about commands, share only the relevant ones — not the entire table. For example, if they ask "how do I check my credits?", just tell them about `/usage`.
+`/h` shows this list in chat. **`/connect` is the universal answer for connecting any third-party service** — there is no other path.
 
-## Getting Started
+## Integration Mapping
 
-Platform-specific setup guidance for new users.
+When a user's feature request needs a specific integration:
+
+| User wants to... | Integration to pick after `/connect` |
+|-------------------|-------------------------------------|
+| Read / send email | Gmail |
+| View / manage calendar events | Google Calendar |
+| Post / search tweets | Twitter (X) |
+| Read / write Notion pages or databases | Notion |
+| Find nearby places or businesses | Google Places |
+| Browse Reddit posts or subreddits | Reddit |
+| Post in Slack | Slack |
+| Create GitHub issues or PRs | GitHub |
+
+For any service not listed, still direct them to `/connect` — Kicker supports 1000+ integrations via Composio. If you're unsure whether a specific service is supported, tell the user to `/connect` to browse the full list.
+
+## Platform Getting Started (first-time setup)
 
 ### WhatsApp
 1. Sign in with Google at app.usekicker.com
-2. Choose your focus area (Side Hustle, Marketing, Self-Discipline, Quit Addiction, or Others)
-3. Connect WhatsApp by scanning the QR code or entering your phone number
-4. Start chatting with Kicker on WhatsApp
+2. Choose a focus area (Side Hustle, Marketing, Self-Discipline, Quit Addiction, Others)
+3. Scan the QR code or enter your phone number
+4. Start chatting on WhatsApp
 
 ### Telegram
-1. Sign in with Google at app.usekicker.com
-2. Choose your focus area
-3. Connect Telegram — click the link to open @KickerAIBot
-4. Start chatting — Telegram supports markdown formatting and has no 24-hour conversation window limit
+1. Sign in at app.usekicker.com
+2. Choose a focus area
+3. Open @KickerAIBot on Telegram
+4. Start chatting
 
 ### iMessage
-1. No registration needed
-2. Text Kicker at +1 (415) 697-4954
-3. Start chatting directly
+1. Text +1 (415) 697-4954 — no registration needed
 
-## Use Cases & Scenarios
+## Use Cases
 
-When users ask what Kicker can help with, match their interest to a scenario:
+| Scenario | Helps with |
+|----------|-----------|
+| Side Hustle | E-commerce, marketplace, freelancing, budget tracking |
+| Marketing | Ad copy, content strategy, launch plans, social media |
+| Self-Discipline | Habits, coaching, fitness, nutrition, focus, time management |
+| Quit Addiction | Therapy, quit smoking/alcohol, detox, stress relief |
+| Others | General productivity, communication, research, integrations |
 
-| Scenario | What It Helps With | Example Skills |
-|----------|-------------------|----------------|
-| **Side Hustle** | Making money on the side | E-commerce, marketplace selling, freelancing, budget tracking |
-| **Marketing** | Growing a brand or product | Ad creative, copywriting, content strategy, launch planning, social media |
-| **Self-Discipline** | Building better habits | Habit tracking, coaching, fitness, nutrition, focus sessions, time management |
-| **Quit Addiction** | Breaking unwanted habits | Therapy support, quit smoking/alcohol, social media detox, stress relief |
-| **Others** | General productivity | Communication, academics, finances, research, app integrations |
+Match 2–3 relevant scenarios to the user's hint rather than listing all.
 
-If a user's interest doesn't clearly match one scenario, briefly describe the options and let them pick. Don't overwhelm — two or three relevant suggestions are better than listing everything.
+## Account & Billing Quick Reference
+
+- Credits balance → `/usage`
+- Top up → `/topup`
+- Linked accounts → `/account` (or account.usekicker.com)
+- Dashboard sign-in → `/signin`
+- Devices → `/device`
+- Deactivate → `/opt-out`
+- Reactivate → `/opt-in`
 
 ## Tips for Better Results
 
-Share these when a user seems to be struggling with response quality:
+Share when the user's request is vague:
+- Be specific about goal, audience, tone
+- Provide context and examples
+- Kicker merges messages sent within ~30 seconds — you can add follow-ups naturally
 
-- **Be specific.** "Help me write a cold email to a SaaS founder about my design services" beats "help me write an email."
-- **Give context.** Share relevant details — who it's for, what tone, what goal.
-- **Send multiple messages.** Kicker merges messages sent within ~30 seconds, so add details as follow-ups instead of cramming everything into one message.
-- **Use examples.** Show Kicker what you like: "Write it like this: [example]."
+## Fallback: GitBook
 
-## Account & Billing
-
-- **Check credits:** `/usage` or `/u`
-- **Top up credits:** `/topup` or `/t`
-- **Manage accounts:** `/account` or `/a` — or visit account.usekicker.com
-- **Sign in to dashboard:** `/signin` or `/login`
-- **View devices:** `/device` or `/d`
-
-## Deactivation & Reactivation
-
-- **Stop all messages and deactivate:** `/opt-out` or `/stop`
-- **Reactivate your account:** `/opt-in` or `/resume`
-
-## Fallback: Check GitBook for Latest Docs
-
-If the user asks about something not covered above, or if you suspect the information here might be outdated, fetch the relevant GitBook page for the latest content:
+For topics not covered above, or if info here feels outdated, fetch the relevant page:
 
 | Topic | URL |
 |-------|-----|
-| Home / Overview | https://kicker.gitbook.io/docs |
-| WhatsApp Setup | https://kicker.gitbook.io/docs/getting-started/whatsapp |
-| Telegram Setup | https://kicker.gitbook.io/docs/getting-started/telegram |
-| iMessage Setup | https://kicker.gitbook.io/docs/getting-started/imessage |
-| Slash Commands | https://kicker.gitbook.io/docs/tips/commands |
-| Better Prompts | https://kicker.gitbook.io/docs/tips/better-prompts |
-| Multiple Messages | https://kicker.gitbook.io/docs/tips/multiple-messages |
+| Home | https://kicker.gitbook.io/docs |
+| WhatsApp setup | https://kicker.gitbook.io/docs/getting-started/whatsapp |
+| Telegram setup | https://kicker.gitbook.io/docs/getting-started/telegram |
+| iMessage setup | https://kicker.gitbook.io/docs/getting-started/imessage |
+| Slash commands | https://kicker.gitbook.io/docs/tips/commands |
+| Better prompts | https://kicker.gitbook.io/docs/tips/better-prompts |
+| Multiple messages | https://kicker.gitbook.io/docs/tips/multiple-messages |
 | Side Hustle | https://kicker.gitbook.io/docs/use-cases/side-hustle |
 | Marketing | https://kicker.gitbook.io/docs/use-cases/marketing |
 | Self-Discipline | https://kicker.gitbook.io/docs/use-cases/self-discipline |
@@ -157,13 +156,12 @@ If the user asks about something not covered above, or if you suspect the inform
 | Others | https://kicker.gitbook.io/docs/use-cases/others |
 | FAQ | https://kicker.gitbook.io/docs/faq/faq |
 
-Only fetch when needed — don't fetch on every activation. The content above should handle most cases.
+Don't fetch on every activation — the content above handles the common cases.
 
 ## Response Guidelines
 
-- Be concise — one or two sentences plus the relevant command is usually enough
-- Use your own voice and tone as defined by your system prompt — this skill provides the information, not the wording
-- Don't dump the entire guide; give them exactly what they need right now
-- Don't invent commands or features that don't exist
-- If unsure whether a specific integration is available, suggest `/connect` to see the full list
-- After guiding the user, offer to help with their original task once they've completed the setup step
+- Reply in the user's language — match what they wrote in, regardless of what language this skill file is in
+- Keep it short: 1–3 sentences plus the command
+- Use your own voice; this skill provides information, not wording
+- Always include the literal slash command with backticks — never paraphrase, never describe a UI alternative
+- After giving the command, offer to help with the user's original task once they're set up
