@@ -1,10 +1,8 @@
 {
   "base": [
-    "email-summary",
     "gmail",
     "google-calendar",
     "google-places",
-    "invoice-organizer",
     "reddit",
     "self-diagnose",
     "skill-install",
