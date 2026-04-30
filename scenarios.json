@@ -1,13 +1,11 @@
 {
   "base": [
-    "email-summary",
     "gmail",
+    "outlook",
     "google-calendar",
     "google-places",
-    "invoice-organizer",
-    "reddit",
-    "self-diagnose",
     "skill-install",
+    "kicker-share",
     "translate",
     "twitter",
     "user-guide"
