@@ -14,8 +14,7 @@
     "ecommerce",
     "marketplace",
     "freelance",
-    "intelligent-budget-tracker",
-    "financial-tracker"
+    "intelligent-budget-tracker"
   ],
   "marketing": [
     "ad-creative",
@@ -26,8 +25,6 @@
     "social-content"
   ],
   "discipline": [
-    "build-discipline",
-    "coach",
     "gym",
     "dietitian",
     "focus-deep-work",
@@ -37,10 +34,7 @@
     "therapy-mode",
     "quit-smoking",
     "quit-alcohol",
-    "social-media-detox",
-    "stress-relief"
+    "social-media-detox"
   ],
-  "other": [
-    "connect"
-  ]
+  "other": []
 }
